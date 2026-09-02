@@ -1,0 +1,69 @@
+.success-state {
+  min-height: 490px;
+  animation: form-enter 420ms var(--ease-out) both;
+}
+
+.success-state .ant-result {
+  padding: 70px 12px 34px;
+}
+
+.success-state .ant-result-icon {
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  color: var(--cobalt);
+  font-size: 52px;
+}
+
+.success-state .ant-result-title {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.success-state .ant-result-subtitle {
+  max-width: 435px;
+  margin: 0 auto;
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.success-state .ant-result-extra .ant-btn {
+  height: 48px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.success-note {
+  flex-wrap: wrap;
+  gap: 9px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px 18px;
+  background: rgba(38, 93, 255, 0.06);
+  border-left: 3px solid var(--cobalt);
+  color: var(--ink-muted);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.success-note span {
+  color: var(--cobalt);
+  font-weight: 800;
+}
+
+.success-note b {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.success-note small {
+  flex-basis: 100%;
+  color: #858b91;
+  font-size: 10px;
+  letter-spacing: 0;
+}

@@ -1,0 +1,28 @@
+.form-footer-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 53px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: #a1a1a0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.form-footer-meta .ant-space {
+  color: var(--ink-muted);
+  font-size: 15px;
+}
+
+.form-footer-meta a {
+  transition:
+    color 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
+}
+
+.form-footer-meta a:hover {
+  color: var(--cobalt);
+  transform: translateY(-2px);
+}
