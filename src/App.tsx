@@ -177,7 +177,7 @@ function App() {
                   <AutoComplete
                     options={koreanCities}
                     filterOption={filterPlaceOptions}
-                    placeholder="Начните вводить по-русски или 한글"
+                    placeholder="ex 서울, Seoul, Сеул"
                     notFoundContent="Город не найден — можно оставить свой вариант"
                   />
                 </Form.Item>
@@ -194,7 +194,7 @@ function App() {
                   <AutoComplete
                     options={koreanUniversities}
                     filterOption={filterPlaceOptions}
-                    placeholder="Например, 서울대학교"
+                    placeholder="ex 서울대학교, Seoul University, Сеульский универ"
                     notFoundContent="Университет не найден — можно ввести вручную"
                   />
                 </Form.Item>
@@ -208,7 +208,7 @@ function App() {
                   }
                   extra="Чтобы подобрать комфортный уровень входа."
                 >
-                  <Input placeholder="3 years in web development" />
+                  <Input placeholder="ex Пет-проекты, стажировка" />
                 </Form.Item>
 
                 <Form.Item
@@ -220,7 +220,7 @@ function App() {
                   }
                   extra="Чтобы первое знакомство было по делу."
                 >
-                  <Input placeholder="What would you like to learn?" />
+                  <Input placeholder="ex Хочу делать фронтенд" />
                 </Form.Item>
 
                 <Form.Item
