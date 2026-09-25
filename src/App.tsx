@@ -18,7 +18,7 @@ import {
 
 import type { RegistrationForm } from "./schema";
 import { koreanCities, koreanUniversities } from "./data";
-import { filterPlaceOptions } from "./core";
+import { filterPlaceOptions, registerUser } from "./core";
 import FieldLabel from "./ui/FieldLabel/FieldLabel";
 import FooterMeta from "./ui/FooterMeta/FooterMeta";
 import SectionTitle from "./ui/SectionTitle/SectionTitle";
@@ -47,8 +47,7 @@ function App() {
             )
           : undefined,
       };
-      // TODO: send payload to your API.
-      console.info("Registration payload:", payload);
+      await registerUser(payload);
       setSubmitted(true);
       message.success("Welcome to the IT Club!");
     } catch {
