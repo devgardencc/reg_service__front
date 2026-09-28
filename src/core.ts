@@ -1,13 +1,19 @@
 import type { PlaceOption, RegisterRequest, RegisterResponse } from "./schema";
 
+
+
+
 export const filterPlaceOptions = (input: string, option?: PlaceOption) => {
   if (!option) return false;
 
   const search = input.trim().toLowerCase();
-  const ko = (option.value ?? "").toLowerCase();
-  const en = (option.label as any)?.props?.children?.[1]?.props?.children?.toLowerCase() ?? "";
+  if (!search) return true;
 
-  return ko.includes(search) || en.includes(search);
+  return (
+    option.ko.toLowerCase().includes(search) ||
+    option.en.toLowerCase().includes(search) ||
+    option.ru.toLowerCase().includes(search)
+  );
 };
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
