@@ -1,6 +1,6 @@
 import { Flex } from "antd";
-import { rawKoreanCities } from "./cities";
-import { rawKoreanUniversities } from "./uni";
+import rawKoreanCities from "./cities.min.json";
+import rawKoreanUniversities  from "./uni.min.json";
 import type { PlaceOption } from "./schema";
 
 export const koreanCities: PlaceOption[] = rawKoreanCities.map((item) => ({
