@@ -1,3 +1,5 @@
+import type { DefaultOptionType } from "antd/es/select";
+
 export type RegistrationForm = {
   name: string;
   tg: string;
@@ -9,10 +11,12 @@ export type RegistrationForm = {
   expectations?: string;
 };
 
-export type PlaceOption = {
+export interface PlaceOption extends DefaultOptionType {
   value: string;
-  label: React.ReactNode;
-};
+  ko: string;
+  en: string;
+  ru: string;
+}
 
 
 export interface RegisterRequest {
